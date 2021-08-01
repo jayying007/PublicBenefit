@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--	移动端的适配-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/layout.css" />
+	<title>公益网~让爱心传递下去</title>
+</head>
+<body>
+<!--	导航栏(logo,标签页,注册登录)-->
+	<nav id="navigation" class="navbar navbar-default navbar-static-top" role="navigation" >
+		<div class="container">
+<!--				用于移动端的响应式布局-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<img src="imgs/logo.png" />
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+<!--					标签页-->
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html" class="bar-label">首页</a></li>
+					<li><a href="category.html" class="bar-label">进行的项目</a></li>
+					<li><a href="ranking.html" class="bar-label">捐赠榜</a></li>
+					<li><a href="about.html" class="bar-label">关于</a></li>
+					<li><a href="contact.html" class="bar-label">联系我们</a></li>
+				</ul>
+<!--					搜索框-->
+				<form class="navbar-form navbar-left navbar-search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="查询项目">
+					</div>
+					<button type="submit" class="btn btn-default">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</form>
+<!--					注册登录-->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle bar-label" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							登录<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="create_account.html"><span class="glyphicon glyphicon-user"></span>注册</a></li>
+							<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>登录</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+<!--轮播图-->
+	<section id="carousel-program" class="carousel slide" data-ride="carousel">
+<!--		图片中间的按钮-->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-program" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-program" data-slide-to="1"></li>
+			<li data-target="#carousel-program" data-slide-to="2"></li>
+			<li data-target="#carousel-program" data-slide-to="3"></li>
+			<li data-target="#carousel-program" data-slide-to="4"></li>
+		</ol>
+<!--		轮播的图片-->
+		<div class="carousel-inner">
+			<div class="item active">
+				<a href="program_content.html"><img src="./imgs/lunbo1.jpg" alt="First slide"></a>
+				<div class="carousel-caption"><h3>心酸！金巧巧现场落泪 自闭症学校孩子半小时尿8次</h3></div>
+			</div>
+			<div class="item">
+				<a href="program_content.html"><img src="./imgs/lunbo2.jpg" alt="Second slide"></a>
+				<div class="carousel-caption"><h3>这群名牌大学生“承包”一所乡村小学，他们在做什么？</h3></div>
+			</div>
+			<div class="item">
+				<a href="program_content.html"><img src="./imgs/lunbo3.jpg" alt="Third slide"></a>
+				<div class="carousel-caption"><h3>伸出手，他们拉回了“悬崖”边的家暴受害者</h3></div>
+			</div>
+			<div class="item">
+				<a href="program_content.html"><img src="./imgs/lunbo4.jpg" alt="Fourth slide"></a>
+				<div class="carousel-caption"><h3>20人2小时捡1吨垃圾 我们对海洋做了什么？</h3></div>
+			</div>
+			<div class="item">
+				<a href="program_content.html"><img src="./imgs/lunbo5.jpg" alt="Fifth slide"></a>
+				<div class="carousel-caption"><h3>变身75岁度过4小时，我理解了照护老人的百种焦虑</h3></div>
+			</div>
+		</div>
+<!--		切换左右图片-->
+		<a class="left carousel-control" href="#carousel-program" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-program" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		</a>
+	</section>
+
+<!--新闻列表及右侧信息-->
+	<section id="news-list">
+		<div class="container">
+			<div class="row">
+<!--				新闻列表-->
+				<div class="col-md-8">
+					<div id="index-news">
+						<div class="media">
+							<div class="media-left">
+								<a href="news_content.html"><img src="imgs/news1.jpg" /></a>
+							</div>
+							<div class="media-body">
+								<a href="news_content.html"><span>2018年，84.6亿人次参与互联网慈善</span></a>
+								<p class="text-muted">“互联网+慈善”深度融合，“人人公益、随手公益、指尖公益”成为潮流。</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="news_content.html"><img src="imgs/news2.jpg" /></a>
+							</div>
+							<div class="media-body">
+								<a href="news_content.html"><span>男子见义勇为被毁容获老人救助，办养老院回报</span></a>
+								<p class="text-muted">“那86块钱我现在还放着呢！”51岁的赵强国常常说起20多年前他见义勇为烧伤住院时，八九位老人前来看望并捐款的事。</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="news_content.html"><img src="imgs/news3.jpg" /></a>
+							</div>
+							<div class="media-body">
+								<a href="news_content.html"><span>“2018慈善名人榜”发布 盛典颁奖礼群星璀璨</span></a>
+								<p class="text-muted">来自公益慈善、演艺、体育、企业、传媒领域的数百位精英齐聚一堂，共同见证名人慈善的力量。</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="news_content.html"><img src="imgs/news4.jpg" /></a>
+							</div>
+							<div class="media-body">
+								<a href="news_content.html"><span>基层公务员坚持公益22年，成为困境孩子“妈妈”</span></a>
+								<p class="text-muted">扎根基层30年，成都公务员江艳在干好本职工作的同时，坚持公益20多年。</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="news_content.html"><img src="imgs/news5.jpg" /></a>
+							</div>
+							<div class="media-body">
+								<a href="news_content.html"><span>女实习医生用漫画搭建与病人的沟通桥梁</span></a>
+								<p class="text-muted">面对有认知障碍和沟通困难的病人们，女实习医生画出了一幅幅有趣、呆萌、疗愈心灵的漫画。</p>
+							</div>
+						</div>
+					</div>
+<!--					新闻分页-->
+					<div id="index-news-next">
+						<ul class="pagination pagination-lg">
+							<li><a href="index.html">&laquo;</a></li>
+							<li class="active"><a href="index.html">1</a></li>
+							<li><a href="index.html">2</a></li>
+							<li><a href="index.html">3</a></li>
+							<li><a href="index.html">4</a></li>
+							<li><a href="index.html">5</a></li>
+							<li><a href="index.html">&raquo;</a></li>
+						</ul>
+					</div>
+				</div>
+<!--				右侧信息-->
+				<div class="col-md-4 hidden-xs hidden-sm">
+<!--					捐助统计-->
+					<div class="donate">
+						<h4>历史总捐赠人数：</h4>
+						<div>
+							<span>996,996,996</span>
+							<span>人</span>
+						</div>
+						<h4>历史总捐赠金额：</h4>
+						<div>
+							<span>96,787,765</span>
+							<span>元</span>
+						</div>
+					</div>
+					<hr/>
+<!--					网站导航-->
+					<div class="direction panel-group"id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+									   href="#website_1">公益网站</a>
+								</h4>
+							</div>
+							<div id="website_1" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<table class="table table-responsive">
+										<tr>
+											<td><a href="http://www.crcf.org.cn/">中国红十字基金</a></td>
+											<td><a href="http://www.onefoundation.cn/">壹基金</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://gongyi.163.com/">网易公益</a></td>
+											<td><a href="http://gongyi.qq.com/">腾讯公益</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://www.unicef.org/chinese">联合国儿童基金</a></td>
+											<td><a href="http://gongyi.sina.com.cn/">新浪公益</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-danger">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+									   href="#website_2">公益微博</a>
+								</h4>
+							</div>
+							<div id="website_2" class="panel-collapse collapse">
+								<div class="panel-body">
+									<table class="table table-responsive">
+										<tr>
+											<td><a href="http://weibo.com/wwfchina">WWF世界自然基金会</a></td>
+											<td><a href="http://weibo.com/ifaw">国际爱护动物基金会</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://weibo.com/bj5885">壹基金救援联盟</a></td>
+											<td><a href="http://weibo.com/cfpa">中国扶贫基金会</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://weibo.com/u/1933895942">宝贝回家</a></td>
+											<td><a href="http://weibo.com/333155510">关爱孤儿</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+									   href="#website_3">环保</a>
+								</h4>
+							</div>
+							<div id="website_3" class="panel-collapse collapse">
+								<div class="panel-body">
+									<table class="table table-responsive">
+										<tr>
+											<td><a href="http://www.zhb.gov.cn/">中国环境保护部</a></td>
+											<td><a href="http://www.gongyishibao.com/">公益时报</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://env.people.com.cn/">人民网环保频道</a></td>
+											<td><a href="http://www.wwfchina.org/">世界自然基金会</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://www.cenews.com.cn/">中国环境网</a></td>
+											<td><a href="http://www.cgf.org.cn/">中国绿化基金会</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-danger">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+									   href="#website_4">公益平台</a>
+								</h4>
+							</div>
+							<div id="website_4" class="panel-collapse collapse">
+								<div class="panel-body">
+									<table class="table table-responsive">
+										<tr>
+											<td><a href="http://www.fupin.org.cn/">中国扶贫基金会</a></td>
+											<td><a href="http://www.cnxr.net/">中华寻人网</a></td>
+										</tr>
+										<tr>
+											<td><a href="http://www.110xr.com/">中国110寻人网</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr/>
+<!--					合作伙伴-->
+					<div class="friend panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title">
+								<span>合作伙伴</span>
+								<div class="pull-right">
+									<button class="prev-slide">&lt;</button>
+									<button class="next-slide">&gt;</button>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<div id="friend" class="carousel slide">
+								<div class="carousel-inner">
+									<div class="item active">
+										<div class="row">
+											<div class="col-md-6"><img src="imgs/friend1.png" /></div>
+											<div class="col-md-6"><img src="imgs/friend2.png" /></div>
+										</div>
+										<div class="row">
+											<div class="col-md-6"><img src="imgs/friend3.png" /></div>
+											<div class="col-md-6"><img src="imgs/friend4.png" /></div>
+										</div>
+										<div class="row">
+											<div class="col-md-6"><img src="imgs/friend5.png" /></div>
+											<div class="col-md-6"><img src="imgs/friend6.png" /></div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="row">
+											<div class="col-md-6"><img src="imgs/friend7.png" /></div>
+											<div class="col-md-6"><img src="imgs/friend8.png" /></div>
+										</div>
+										<div class="row">
+											<div class="col-md-6"><img src="imgs/friend9.png" /></div>
+											<div class="col-md-6"><img src="imgs/friend10.png" /></div>
+										</div>
+										<div class="row">
+											<div class="col-md-6"><img src="imgs/friend11.png" /></div>
+											<div class="col-md-6"><img src="imgs/friend12.png" /></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--	 底部 -->
+	<footer id="footer" class="panel-footer hidden-sm hidden-xs">
+        <div class="container">
+            <div class="row">
+<!--                上方导航链接-->
+                <div class="col-md-3 footer-left">
+                    <div class="col-md-6">
+                        <ul class="list-inline text-center">
+                            <li><a href="category.html">进行的项目</a></li>
+                            <li><a href="ranking.html">捐赠榜</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline text-center">
+                            <li><a href="about.html">关于</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!--                中间版权模块-->
+                <div class="col-md-6 footer-mid">
+                    <h4 class="text-center text-muted">版权声明CopyRight·2019@华南师范大学·软件学院</h4>
+                </div>
+<!--                官方微信微博-->
+                <div class="col-md-3 footer-right">
+                    <div class="col-md-3 weibo">
+                        <div class="badge">官方微博</div>
+                        <img width="100" src="imgs/weibo.png"/>
+                    </div>
+                    <div class="col-md-3 weixin">
+                        <div class="badge">官方微信</div>
+                        <img width="100" src="imgs/weixin.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+	<script>
+		$(function(){
+			// 循环轮播到上一个项目
+			$(".prev-slide").click(function(){
+				$("#friend").carousel('prev');
+			});
+			// 循环轮播到下一个项目
+			$(".next-slide").click(function(){
+				$("#friend").carousel('next');
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/layout.css" />
+	<title>进行的项目</title>
+</head>
+<body>
+<!--	导航栏(logo,标签页,注册登录)-->
+	<nav id="navigation" class="navbar navbar-default navbar-static-top" role="navigation" >
+	<div class="container">
+		<!--				用于移动端的响应式布局-->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="imgs/logo.png" />
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<!--					标签页-->
+			<ul class="nav navbar-nav">
+				<li><a href="index.html" class="bar-label">首页</a></li>
+				<li class="active"><a href="category.html" class="bar-label">进行的项目</a></li>
+				<li><a href="ranking.html" class="bar-label">捐赠榜</a></li>
+				<li><a href="about.html" class="bar-label">关于</a></li>
+				<li><a href="contact.html" class="bar-label">联系我们</a></li>
+			</ul>
+			<!--					搜索框-->
+			<form class="navbar-form navbar-left navbar-search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="查询项目">
+				</div>
+				<button type="submit" class="btn btn-default">
+					<span class="glyphicon glyphicon-search"></span>
+				</button>
+			</form>
+			<!--					注册登录-->
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle bar-label" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						登录<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="create_account.html"><span class="glyphicon glyphicon-user"></span>注册</a></li>
+						<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>登录</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<!--进行的项目列表-->
+	<section id="program-list">
+<!--		分类标签栏-->
+		<ul id="myTab" class="nav nav-pills">
+			<li class="active"><a href="#tab-one" data-toggle="tab">医疗救助</a></li>
+			<li><a href="#tab-two" data-toggle="tab">健康干预</a></li>
+			<li><a href="#tab-three" data-toggle="tab">救灾赈灾</a></li>
+		</ul>
+<!--		标签对应栏目-->
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade in active" id="tab-one">
+<!--				栏目介绍-->
+				<div class="category-dec">
+					<p class="text-muted">关注和保护最易受损人群的生命与健康，是“红十字天使计划”的核心宗旨。
+						目前中国红基会的医疗救助项目主要是资助贫困重症人群（特别是儿童）的治疗费用
+						，构筑最易受损人群生命与健康保护的底线。</p>
+				</div>
+<!--				栏目内项目-->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="program_content.html"><img src="imgs/program1_1.jpg" /></a>
+						</div>
+						<div class="col-md-8">
+							<a href="program_content.html"><span class="program-title">小天使基金</span></a>
+							<p class="program-desc">中国红十字基金会是一家国际性的公募基金会，
+								以弘扬“人道、博爱、奉献”的红十字精神为宗旨，
+								以致力于改善最易受损害人群的境况、保护人的生命与健康为使命。
+								为凝聚社会爱心，救助千千万万个像小海栋一样来自贫困家庭的白血病儿童...</p>
+							<a href="donate.html"><button class="btn btn-danger">捐助</button></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<a href="program_content.html"><img src="imgs/program1_2.jpg" /></a>
+						</div>
+						<div class="col-md-8">
+							<a href="program_content.html"><span class="program-title">天使阳光基金</span></a>
+							<p class="program-desc">“天使阳光行动”是中国红十字基金会倡导实施的
+								“红十字天使计划”的组成部分，是继救助白血病儿童、脑瘫儿童等重症患儿之后推出
+								的又一个大病医疗救助行动。该行动旨在动员社会力量，建立“天使阳光基金”，对农
+								村患有先天性心脏病...</p>
+							<a href="donate.html"><button class="btn btn-danger">捐助</button></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<a href="program_content.html"><img src="imgs/program1_3.jpg" /></a>
+						</div>
+						<div class="col-md-8">
+							<a href="program_content.html"><span class="program-title">中央专项彩票公益金</span></a>
+							<p class="program-desc">彩票公益金项目支持中国红基会开展贫困白血病
+								、先心病等大病儿童救助工作，符合国家医疗保障政策与社会救助互相配合的精神，
+								发挥红十字会的政府助手作用，能有效减轻贫困家庭经济压力和精神负担、消除社会
+								不稳定因素，促进和谐社会...</p>
+							<a href="donate.html"><button class="btn btn-danger">捐助</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="tab-two">
+				<div class="category-dec">
+					<p class="text-muted">关注和保护最易受损人群的生命与健康，是“红十字天使计划”的核心宗旨。目前
+						中国红基会的健康干预类公益项目主要支持改善边远不发达地区乡村基础医疗条件，
+						旨在构筑最易受损人群生命与健康保护的底线。</p>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="program_content.html"><img src="imgs/program2_1.jpg" /></a>
+						</div>
+						<div class="col-md-8">
+							<a href="program_content.html"><span class="program-title">援建博爱卫生院（站）</span></a>
+							<p class="program-desc">我国有4.5亿农民看不起病，疾病已经成为中国
+								乡村农民陷入贫困的最重要原因之一。据宁夏南部山区的一份调查显示，当地60%的
+								农民看不起病，1/3住不起医院，山区农民因病致贫、返贫率达74.1%。由于贫困，
+								当地农民抵御疾病风险的能力低...</p>
+							<a href="donate.html"><button class="btn btn-danger">捐助</button></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<a href="program_content.html"><img src="imgs/program2_2.jpg" /></a>
+						</div>
+						<div class="col-md-8">
+							<a href="program_content.html"><span class="program-title">乡村医生培训计划</span></a>
+							<p class="program-desc">为积极协助中国政府建立和完善我国农村的合作
+								医疗体系，改善贫困地区农村的医疗卫生条件，2006年，中国红十字基金会联合中国
+								乡村医生培训中心等国家级医疗培训机构及关心中国农民医疗卫生条件改善的企业共
+								同推出——“万名乡村医生...</p>
+							<a href="donate.html"><button class="btn btn-danger">捐助</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="tab-three">
+				<div class="category-dec">
+					<p class="text-muted">灾害救援救济是和平时期红十字运动的一项核心业务。自成立以来，中国红基会
+						始终在这一领域开展工作。尤其是近年来，从 5•12 汶川地震，到西南旱灾、玉树
+						地震、舟曲泥石流，到彝良地震、芦山地震、定西地震、和田地震、东北洪灾、湖南
+						水灾，再到威马逊风灾、鲁甸地震……我们根据中国红十字会总会统一部署，一直与政
+						府、国内国际专业机构、爱心企业以及志愿者们一起，致力于重大灾害的紧急救援和
+						灾后恢复。</p>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="program_content.html"><img src="imgs/program3_1.jpg" /></a>
+						</div>
+						<div class="col-md-8">
+							<a href="program_content.html"><span class="program-title">驰援南北方洪涝灾区</span></a>
+							<p class="program-desc">2017年6月中下旬以来，我国南北方多省持续遭
+								遇强降雨袭击，洪涝灾害严重，人民生命财产遭受严重损失。其中江西、湖南、贵州
+								、广西、四川、吉林等地受灾严重。为应对灾情，中国红十字基金会紧急启动灾害响
+								应行动，派出多支工作组分别...</p>
+							<a href="donate.html"><button class="btn btn-danger">捐助</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--	 底部 -->
+	<footer id="footer" class="panel-footer hidden-sm hidden-xs">
+	<div class="container">
+		<div class="row">
+			<!--                上方导航链接-->
+			<div class="col-md-3 footer-left">
+				<div class="col-md-6">
+					<ul class="list-inline text-center">
+						<li><a href="category.html">进行的项目</a></li>
+						<li><a href="ranking.html">捐赠榜</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline text-center">
+						<li><a href="about.html">关于</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--                中间版权模块-->
+			<div class="col-md-6 footer-mid">
+				<h4 class="text-center text-muted">版权声明CopyRight·2019@华南师范大学·软件学院</h4>
+			</div>
+			<!--                官方微信微博-->
+			<div class="col-md-3 footer-right">
+				<div class="col-md-3 weibo">
+					<div class="badge">官方微博</div>
+					<img width="100" src="imgs/weibo.png"/>
+				</div>
+				<div class="col-md-3 weixin">
+					<div class="badge">官方微信</div>
+					<img width="100" src="imgs/weixin.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+		
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

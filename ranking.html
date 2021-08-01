@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/layout.css" />
+	<script src="js/myJs.js"></script>
+	<title>捐赠榜</title>
+</head>
+<body>
+<!--	导航栏(logo,标签页,注册登录)-->
+	<nav id="navigation" class="navbar navbar-default navbar-static-top" role="navigation" >
+	<div class="container">
+		<!--				用于移动端的响应式布局-->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="imgs/logo.png" />
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<!--					标签页-->
+			<ul class="nav navbar-nav">
+				<li><a href="index.html" class="bar-label">首页</a></li>
+				<li><a href="category.html" class="bar-label">进行的项目</a></li>
+				<li class="active"><a href="ranking.html" class="bar-label">捐赠榜</a></li>
+				<li><a href="about.html" class="bar-label">关于</a></li>
+				<li><a href="contact.html" class="bar-label">联系我们</a></li>
+			</ul>
+			<!--					搜索框-->
+			<form class="navbar-form navbar-left navbar-search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="查询项目">
+				</div>
+				<button type="submit" class="btn btn-default">
+					<span class="glyphicon glyphicon-search"></span>
+				</button>
+			</form>
+			<!--					注册登录-->
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle bar-label" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						登录<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="create_account.html"><span class="glyphicon glyphicon-user"></span>注册</a></li>
+						<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>登录</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<!--	中间信息展示-->
+	<section id="info" class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#current"data-toggle="tab">实时捐赠榜</a></li>
+					<li><a href="#history"data-toggle="tab">历史总捐助榜</a></li>
+					<li><a href="#2019-rank"data-toggle="tab" onclick="chart2019()">2019年榜</a></li>
+					<li><a href="#2018-rank"data-toggle="tab" onclick="chart2018()">2018年榜</a></li>
+				</ul>
+			</div>
+			<div class="col-md-9 tab-content">
+				<div class="tab-pane fade in active" id="current">
+					<div>
+						<ul class="breadcrumb">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="about.html">捐赠榜</a></li>
+							<li class="active">实时捐赠榜</li>
+						</ul>
+					</div>
+					<hr />
+					<div class="detail-info">
+						<table class="table">
+							<tr>
+								<td class="col-md-4">用户名</td>
+								<td class="col-md-4">捐赠金额</td>
+								<td class="col-md-4">捐赠时间</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<marquee height="200" direction="up" behavior="scroll" scrolldelay="10" loop="-1" scrollamount="3">
+										<div class="donate-item">
+											<div class="col-md-4">张三</div>
+											<div class="col-md-4">捐赠了100元</div>
+											<div class="col-md-4">3秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">李四</div>
+											<div class="col-md-4">捐赠了400元</div>
+											<div class="col-md-4">19秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">王五</div>
+											<div class="col-md-4">捐赠了500元</div>
+											<div class="col-md-4">1分钟前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">老刘</div>
+											<div class="col-md-4">捐赠了200元</div>
+											<div class="col-md-4">2分钟前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">张三</div>
+											<div class="col-md-4">捐赠了100元</div>
+											<div class="col-md-4">3秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">李四</div>
+											<div class="col-md-4">捐赠了400元</div>
+											<div class="col-md-4">19秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">王五</div>
+											<div class="col-md-4">捐赠了500元</div>
+											<div class="col-md-4">1分钟前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">老刘</div>
+											<div class="col-md-4">捐赠了200元</div>
+											<div class="col-md-4">2分钟前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">张三</div>
+											<div class="col-md-4">捐赠了100元</div>
+											<div class="col-md-4">3秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">李四</div>
+											<div class="col-md-4">捐赠了400元</div>
+											<div class="col-md-4">19秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">王五</div>
+											<div class="col-md-4">捐赠了500元</div>
+											<div class="col-md-4">1分钟前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">老刘</div>
+											<div class="col-md-4">捐赠了200元</div>
+											<div class="col-md-4">2分钟前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">李四</div>
+											<div class="col-md-4">捐赠了400元</div>
+											<div class="col-md-4">19秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">王五</div>
+											<div class="col-md-4">捐赠了500元</div>
+											<div class="col-md-4">1分钟前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">老刘</div>
+											<div class="col-md-4">捐赠了200元</div>
+											<div class="col-md-4">2分钟前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">张三</div>
+											<div class="col-md-4">捐赠了100元</div>
+											<div class="col-md-4">3秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">张三</div>
+											<div class="col-md-4">捐赠了100元</div>
+											<div class="col-md-4">3秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">李四</div>
+											<div class="col-md-4">捐赠了400元</div>
+											<div class="col-md-4">19秒前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">王五</div>
+											<div class="col-md-4">捐赠了500元</div>
+											<div class="col-md-4">1分钟前</div>
+										</div>
+										<div class="donate-item">
+											<div class="col-md-4">老刘</div>
+											<div class="col-md-4">捐赠了200元</div>
+											<div class="col-md-4">2分钟前</div>
+										</div>
+									</marquee>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="history">
+					<div>
+						<ul class="breadcrumb">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="about.html">捐赠榜</a></li>
+							<li class="active">历史总捐赠榜</li>
+						</ul>
+					</div>
+					<hr />
+					<div class="detail-info">
+						<table class="table text-right">
+							<tr>
+								<th></th>
+								<th class="text-right">用户名</th>
+								<th class="text-right">总捐赠金额</th>
+								<th class="text-right">总捐赠次数</th>
+							</tr>
+							<tr>
+								<td><span class="badge">1</span></td>
+								<td>李四</td>
+								<td>130,123,312元</td>
+								<td>100次</td>
+							</tr>
+							<tr>
+								<td><span class="badge">2</span></td>
+								<td>张三</td>
+								<td>199,220元</td>
+								<td>14次</td>
+							</tr>
+							<tr>
+								<td><span class="badge">3</span></td>
+								<td>王五</td>
+								<td>123,125元</td>
+								<td>141次</td>
+							</tr>
+							<tr>
+								<td><span class="badge">4</span></td>
+								<td>刘**</td>
+								<td>9,999元</td>
+								<td>11次</td>
+							</tr>
+							<tr>
+								<td><span class="badge">5</span></td>
+								<td>陈*</td>
+								<td>999元</td>
+								<td>2次</td>
+							</tr>
+						</table>
+					</div>
+					<ul class="pager">
+						<li class="previous disabled"><a href="#">&larr; 上一页</a></li>
+						<li class="next"><a href="#">下一页 &rarr;</a></li>
+					</ul>
+				</div>
+				<div class="tab-pane fade" id="2019-rank">
+					<div>
+						<ul class="breadcrumb">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="about.html">捐赠榜</a></li>
+							<li class="active">2019年榜</li>
+						</ul>
+					</div>
+					<hr />
+					<div id="chart2019"></div>
+				</div>
+				<div class="tab-pane fade" id="2018-rank">
+					<div>
+						<ul class="breadcrumb">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="about.html">捐赠榜</a></li>
+							<li class="active">2018榜</li>
+						</ul>
+					</div>
+					<hr />
+					<div id="chart2018"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--	 底部 -->
+	<footer id="footer" class="panel-footer hidden-sm hidden-xs">
+	<div class="container">
+		<div class="row">
+			<!--                上方导航链接-->
+			<div class="col-md-3 footer-left">
+				<div class="col-md-6">
+					<ul class="list-inline text-center">
+						<li><a href="category.html">进行的项目</a></li>
+						<li><a href="ranking.html">捐赠榜</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline text-center">
+						<li><a href="about.html">关于</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--                中间版权模块-->
+			<div class="col-md-6 footer-mid">
+				<h4 class="text-center text-muted">版权声明CopyRight·2019@华南师范大学·软件学院</h4>
+			</div>
+			<!--                官方微信微博-->
+			<div class="col-md-3 footer-right">
+				<div class="col-md-3 weibo">
+					<div class="badge">官方微博</div>
+					<img width="100" src="imgs/weibo.png"/>
+				</div>
+				<div class="col-md-3 weixin">
+					<div class="badge">官方微信</div>
+					<img width="100" src="imgs/weixin.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/echarts.min.js"></script>
+<!--年度捐赠榜-->
+	<script type="text/javascript">
+	// 初始化图表标签
+
+</script>
+</body>
+</html>

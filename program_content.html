@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/layout.css">
+	<title>项目页面</title>
+</head>
+<body>
+<!--	导航栏(logo,标签页,注册登录)-->
+	<nav id="navigation" class="navbar navbar-default navbar-static-top" role="navigation" >
+	<div class="container">
+		<!--				用于移动端的响应式布局-->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="imgs/logo.png" />
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<!--					标签页-->
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html" class="bar-label">首页</a></li>
+				<li><a href="category.html" class="bar-label">进行的项目</a></li>
+				<li><a href="ranking.html" class="bar-label">捐赠榜</a></li>
+				<li><a href="about.html" class="bar-label">关于</a></li>
+				<li><a href="contact.html" class="bar-label">联系我们</a></li>
+			</ul>
+			<!--					搜索框-->
+			<form class="navbar-form navbar-left navbar-search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="查询项目">
+				</div>
+				<button type="submit" class="btn btn-default">
+					<span class="glyphicon glyphicon-search"></span>
+				</button>
+			</form>
+			<!--					注册登录-->
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle bar-label" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						登录<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="create_account.html"><span class="glyphicon glyphicon-user"></span>注册</a></li>
+						<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>登录</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<!--	项目基本描述-->
+	<section id="simple-dec" class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<img width="100%" src="imgs/program1_1.jpg" />
+			</div>
+			<div class="col-md-7">
+				<h2>小天使基金</h2>
+				<hr />
+				<div class="list">
+					<span class="label label-danger">时间</span>
+					<span class="label label-default">2019-01-01</span>-
+					<span class="label label-default">2019-04-28</span>
+				</div>
+				<div class="list">
+					<span class="label label-danger">已捐金额</span>
+					<div class="progress progress-striped active">
+						<div class="progress-bar progress-bar-success progress-now" role="progressbar"
+							 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+							<span>40312元</span>
+						</div>
+						<div class="progress-bar progress-leave" role="progressbar"
+							 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+							<span class="text-muted">剩余79688元</span>
+						</div>
+					</div>
+				</div>
+				<div class="list">
+					<a href="donate.html"><button class="btn btn-danger">立即捐助</button></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--	项目详细描述-->
+	<section id="more-dec" class="container">
+		<div class="row">
+<!--			项目描述-->
+			<div class="col-md-8">
+				<h2>项目介绍</h2>
+				<hr />
+				<div>
+					<p>据统计，目前中国有400万的白血病患者，这一数字还在以每年3万到4万的速度增加
+						。在白血病患者中，高达50%的病人是儿童。越来越多的数据表明，近年来，儿童已经成
+						了白血病的高发人群。面对白血病治疗所需的数十万元巨额医疗费用，许多贫困的家庭往
+						往只能选择放弃。</p>
+					<p>中国红十字基金会是一家国际性的公募基金会，以弘扬“人道、博爱、奉献”的红十字
+						精神为宗旨，以致力于改善最易受损害人群的境况、保护人的生命与健康为使命。为凝聚
+						社会爱心，救助千千万万个像小海栋一样来自贫困家庭的白血病儿童，中国红十字基金会
+						倡导建立我国第一个救助白血病儿童的专项基金——“小天使基金”，以所募善款专项用于救
+						助家庭贫困的白血病儿童。</p>
+					<img src="imgs/program_content.jpg" />
+					<p>每一个白血病儿童都和健康儿童一样，是可爱的小天使，是祖国的花朵和未来。关爱他
+						们，就是关爱未来。中国红十字基金会呼吁海内外的爱心企业、团体和人士，让我们共同来
+						做白血病儿童的爱心天使，给那些面临生命威胁的贫困白血病儿童送去福音，让每一个患病
+						儿童都拥有幸福的童年和美好的明天。</p>
+				</div>
+			</div>
+<!--			右侧其他信息-->
+			<div class="col-md-4">
+				<!-- 捐助记录 -->
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<h3 class="panel-title"><b>项目历史捐赠记录</b></h3>
+					</div>
+					<table class="table">
+						<tr>
+							<td colspan="3">
+								<marquee height="150" direction="up" behavior="scroll" scrolldelay="10" loop="-1" scrollamount="3">
+									<div class="donate-item">
+										<div class="col-md-4">张三</div>
+										<div class="col-md-4">捐赠了100元</div>
+										<div class="col-md-4">3秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">李四</div>
+										<div class="col-md-4">捐赠了400元</div>
+										<div class="col-md-4">19秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">王五</div>
+										<div class="col-md-4">捐赠了500元</div>
+										<div class="col-md-4">1分钟前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">老刘</div>
+										<div class="col-md-4">捐赠了200元</div>
+										<div class="col-md-4">2分钟前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">张三</div>
+										<div class="col-md-4">捐赠了100元</div>
+										<div class="col-md-4">3秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">李四</div>
+										<div class="col-md-4">捐赠了400元</div>
+										<div class="col-md-4">19秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">王五</div>
+										<div class="col-md-4">捐赠了500元</div>
+										<div class="col-md-4">1分钟前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">老刘</div>
+										<div class="col-md-4">捐赠了200元</div>
+										<div class="col-md-4">2分钟前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">张三</div>
+										<div class="col-md-4">捐赠了100元</div>
+										<div class="col-md-4">3秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">李四</div>
+										<div class="col-md-4">捐赠了400元</div>
+										<div class="col-md-4">19秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">王五</div>
+										<div class="col-md-4">捐赠了500元</div>
+										<div class="col-md-4">1分钟前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">老刘</div>
+										<div class="col-md-4">捐赠了200元</div>
+										<div class="col-md-4">2分钟前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">李四</div>
+										<div class="col-md-4">捐赠了400元</div>
+										<div class="col-md-4">19秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">王五</div>
+										<div class="col-md-4">捐赠了500元</div>
+										<div class="col-md-4">1分钟前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">老刘</div>
+										<div class="col-md-4">捐赠了200元</div>
+										<div class="col-md-4">2分钟前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">张三</div>
+										<div class="col-md-4">捐赠了100元</div>
+										<div class="col-md-4">3秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">张三</div>
+										<div class="col-md-4">捐赠了100元</div>
+										<div class="col-md-4">3秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">李四</div>
+										<div class="col-md-4">捐赠了400元</div>
+										<div class="col-md-4">19秒前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">王五</div>
+										<div class="col-md-4">捐赠了500元</div>
+										<div class="col-md-4">1分钟前</div>
+									</div>
+									<div class="donate-item">
+										<div class="col-md-4">老刘</div>
+										<div class="col-md-4">捐赠了200元</div>
+										<div class="col-md-4">2分钟前</div>
+									</div>
+								</marquee>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<hr/>
+				<!-- 其他项目推荐 -->
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<span><b>其他项目推荐</b></span>
+							<div class="pull-right">
+								<button class="btn-danger prev-slide">&lt;</button>
+								<button class="btn-danger next-slide">&gt;</button>
+							</div>
+						</div>
+					</div>
+					<div class="panel-body">
+						<div id="program" class="carousel slide">
+							<div class="carousel-inner">
+								<div class="item active">
+									<a href="program_content.html"><img width="100%" src="imgs/program1_2.jpg"></a>
+									<div class="carousel-caption">天使阳光基金</div>
+								</div>
+								<div class="item">
+									<a href="program_content.html"><img width="100%" src="imgs/program1_3.jpg"></a>
+									<div class="carousel-caption">中央专项彩票公益金</div>
+								</div>
+								<div class="item">
+									<a href="program_content.html"><img width="100%" src="imgs/program2_1.jpg"></a>
+									<div class="carousel-caption">援建博爱卫生院（站）</div>
+								</div>
+								<div class="item">
+									<a href="program_content.html"><img width="100%" src="imgs/program2_2.jpg"></a>
+									<div class="carousel-caption">乡村医生培训计划</div>
+								</div>
+								<div class="item">
+									<a href="program_content.html"><img width="100%" src="imgs/program3_1.jpg"></a>
+									<div class="carousel-caption">驰援南北方洪涝灾区</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--	 底部 -->
+	<footer id="footer" class="panel-footer hidden-sm hidden-xs">
+	<div class="container">
+		<div class="row">
+			<!--                上方导航链接-->
+			<div class="col-md-3 footer-left">
+				<div class="col-md-6">
+					<ul class="list-inline text-center">
+						<li><a href="category.html">进行的项目</a></li>
+						<li><a href="ranking.html">捐赠榜</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline text-center">
+						<li><a href="about.html">关于</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--                中间版权模块-->
+			<div class="col-md-6 footer-mid">
+				<h4 class="text-center text-muted">版权声明CopyRight·2019@华南师范大学·软件学院</h4>
+			</div>
+			<!--                官方微信微博-->
+			<div class="col-md-3 footer-right">
+				<div class="col-md-3 weibo">
+					<div class="badge">官方微博</div>
+					<img width="100" src="imgs/weibo.png"/>
+				</div>
+				<div class="col-md-3 weixin">
+					<div class="badge">官方微信</div>
+					<img width="100" src="imgs/weixin.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script>
+		$(function(){
+			// 循环轮播到上一个项目
+			$(".prev-slide").click(function(){
+				$("#program").carousel('prev');
+			});
+			// 循环轮播到下一个项目
+			$(".next-slide").click(function(){
+				$("#program").carousel('next');
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+/*****************************common*******************************/
+#navigation{
+	background: transparent;
+}
+#navigation li.active .bar-label{
+	border-bottom: 2px solid red;
+	background-color: transparent;
+}
+#navigation .navbar-nav li a:hover{
+	border-bottom: 2px solid red;
+	background-color: transparent;
+}
+#navigation .navbar-brand{
+	height: 70px;
+	padding: 0;
+}
+#navigation .navbar-brand img{
+	height: 70px;
+	padding: 10px 10px;
+}
+
+#navigation .bar-label {
+	height: 70px;
+	line-height: 40px;
+	background-color: transparent;
+}
+#navigation .navbar-search{
+	padding-top: 13px;
+}
+
+#navigation .dropdown-menu a:hover{
+	background-color: #FFCDD2;
+}
+#navigation .dropdown-menu span{
+	margin-right: 5px;
+}
+
+#footer{
+	height: 150px;
+}
+#footer .footer-left,.footer-mid{
+	border-right: solid;
+	border-width: 1px;
+	border-color: #e0e0e0;
+	height: 120px;
+	padding-top: 30px;
+}
+#footer .footer-left li{
+	padding: 8px;
+}
+#footer .footer-right .weibo,.weixin{
+	margin-right: 50px;
+}
+#footer .footer-right .badge{
+	margin-bottom: 10px;
+}
+/*****************************common*******************************/
+
+/*****************************index*******************************/
+#carousel-program img{
+	width: 100%;
+}
+#index-news{
+	padding: 30px 0px;
+}
+#index-news .media{
+	border-bottom: #e0e0e0 solid 2px;
+	padding: 10px 0px;
+}
+#index-news .media img{
+	width: 250px;
+}
+#index-news .media .media-body a{
+	color: #0f0f0f;
+}
+#index-news .media .media-body p{
+	margin: 20px 5px;
+}
+#index-news .media .media-body span{
+	font-size: 25px;
+}
+#index-news .media .media-body a:hover{
+	color: white;
+	text-decoration: none;
+}
+#index-news .media .media-body a:hover span{
+	background-color: red;
+}
+#index-news-next a{
+	color: #0f0f0f;
+}
+#index-news-next li.active a{
+	background-color: red;
+	color: white;
+	border: none;
+}
+#news-list .donate{
+	background: url("../imgs/bg3.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 20px 20px;
+	margin: 40px 0px;
+}
+#news-list .donate span{
+	font-size: 30px;
+	color: red;
+}
+#news-list .direction a{
+	color: #0f0f0f;
+	text-decoration: none;
+}
+#news-list .direction a:hover{
+	color: red;
+}
+#news-list .friend button{
+	font-size: 18px;
+	border: none;
+	margin: 0px 2px;
+}
+#news-list .friend .carousel img{
+	width: 80%;
+}
+#footer a{
+	color: #666;
+	text-decoration: none;
+}
+/*****************************index*******************************/
+
+/*****************************create_account*******************************/
+#create-account .account-right{
+	padding: 60px 15px;
+}
+/*****************************create_account*******************************/
+
+/*****************************login*******************************/
+#login{
+	padding: 30px;
+}
+#login .right-block{
+	height: 150px;
+
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+/*****************************login*******************************/
+
+/*****************************news_content*******************************/
+#news-detail .col-md-8 img{
+	width: 100%;
+	padding: 30px 0px;
+}
+#news-detail b,p{
+	line-height: 50px;
+	font-size: 20px;
+}
+/*****************************news_content*******************************/
+
+/*****************************category*******************************/
+#program-list{
+	padding: 30px 50px;
+	font-size: 18px;
+	line-height: 20px;
+}
+#program-list .nav-pills{
+	margin: 0 auto;
+	background-color: #e0e0e0;
+	width: 100%;
+}
+#program-list .nav-pills a{
+	border: solid 1px;
+	margin: 10px 10px;
+	color: red;
+}
+#program-list .nav-pills li.active a{
+	border: solid 1px red;
+	color: white;
+	background-color: red;
+}
+#program-list .category-dec p{
+	padding: 20px 35px;
+	font-size: 18px;
+	background-color: #e0e0e0;
+}
+#myTabContent img{
+	width: 100%;
+}
+#myTabContent .col-md-8{
+	padding: 20px 10px;
+}
+#myTabContent .col-md-8 a{
+	color: black;
+	text-decoration: none;
+}
+#myTabContent .col-md-8 a:hover span{
+	color: white;
+	background-color: red;
+}
+#myTabContent .program-title{
+	font-size: 30px;
+}
+#myTabContent .program-desc{
+	color: #666;
+	font-size: 16px;
+	line-height: 40px;
+	padding: 10px 0px;
+}
+#myTabContent .row{
+	margin: 20px 0px;
+}
+/*****************************category*******************************/
+
+/*****************************program_content*******************************/
+#simple-dec{
+	padding: 30px 10px;
+}
+#simple-dec .progress-now{
+	width: 40%;
+}
+#simple-dec .progress-leave{
+	width: 60%;
+	background-color: #ddd;
+}
+#simple-dec .list {
+	margin: 30px 10px;
+}
+#simple-dec .list .progress{
+	margin: 20px 0px;
+}
+#more-dec{
+	padding: 30px 10px;
+}
+#more-dec .col-md-8 p{
+	line-height: 40px;
+	color: #999;
+}
+#more-dec .col-md-8 img{
+	width: 90%;
+	padding: 40px;
+}
+/*****************************program_content*******************************/
+
+/*****************************donate*******************************/
+#donate .col-md-6 p{
+	font-size: 18px;
+	color: #999;
+	padding: 20px 20px;
+	line-height: 40px;
+}
+#donate .list{
+	margin: 15px 5px;
+}
+#donate .list .progress-now{
+	width: 40%;
+}
+#donate .list .progress{
+	width: 70%;
+}
+#donate .list .progress-leave{
+	width: 60%;
+	background-color: #ddd;
+}
+#donate .modal-dialog{
+	width: 250px;
+}
+#donate .modal-body img{
+	width: 200px;
+	margin: 0 auto;
+}
+/*****************************donate*******************************/
+
+/*****************************contact*******************************/
+#google-map{
+	padding: 30px 20px;
+}
+#contact .contact-form,.contact-info{
+	padding: 30px 20px;
+}
+#contact .contact-info .row{
+	margin: 30px 15px;
+}
+/*****************************contact*******************************/
+
+/*****************************about*******************************/
+#info{
+	padding: 35px 20px;
+}
+#info .nav-pills .active a{
+	background-color: red;
+	color: white;
+}
+#info .nav-pills a{
+	color: #666;
+}
+#info .breadcrumb a{
+	color: #666;
+}
+#info .breadcrumb a:hover{
+	color: red;
+}
+#info .detail-info{
+	padding: 20px 10px;
+}
+#info .detail-info .panel-danger{
+	margin: 25px 0px;
+}
+#info .detail-info p{
+	color: #666;
+	font-size: 15px;
+	line-height: 25px;
+}
+#info .detail-info b{
+	font-size: 20px;
+	color: red;
+}
+#info .detail-info .media{
+	margin: 20px 5px;
+}
+/*****************************about*******************************/
+
+/*****************************ranking*******************************/
+#chart2018,#chart2019{
+	width: 450px;
+	height: 450px;
+	margin: 0 auto;
+}
+.donate-item{
+	margin: 30px 0px;
+}
+/*****************************ranking*******************************/

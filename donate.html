@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<title>捐赠页面</title>
+</head>
+<body>
+<!--	导航栏(logo,标签页,注册登录)-->
+	<nav id="navigation" class="navbar navbar-default navbar-static-top" role="navigation" >
+	<div class="container">
+		<!--				用于移动端的响应式布局-->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="imgs/logo.png" />
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<!--					标签页-->
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html" class="bar-label">首页</a></li>
+				<li><a href="category.html" class="bar-label">进行的项目</a></li>
+				<li><a href="ranking.html" class="bar-label">捐赠榜</a></li>
+				<li><a href="about.html" class="bar-label">关于</a></li>
+				<li><a href="contact.html" class="bar-label">联系我们</a></li>
+			</ul>
+			<!--					搜索框-->
+			<form class="navbar-form navbar-left navbar-search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="查询项目">
+				</div>
+				<button type="submit" class="btn btn-default">
+					<span class="glyphicon glyphicon-search"></span>
+				</button>
+			</form>
+			<!--					注册登录-->
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle bar-label" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						登录<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="create_account.html"><span class="glyphicon glyphicon-user"></span>注册</a></li>
+						<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>登录</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<!--	项目描述和捐赠表单-->
+	<section id="donate" class="container">
+		<h3>感谢您的热心捐赠</h3>
+		<hr />
+		<div class="row">
+<!--			项目描述-->
+			<div class="col-md-6">
+				<div class="col-md-5">
+					<img width="100%" src="imgs/program1_1.jpg" />
+				</div>
+				<div class="col-md-7">
+					<h4><b>小天使基金</b></h4>
+					<hr />
+					<div class="list">
+						<span class="label label-danger">时间</span>
+						<span class="label label-default">2019-01-01</span>-
+						<span class="label label-default">2019-04-28</span>
+					</div>
+					<div class="list">
+						<div class="progress progress-striped active">
+							<div class="progress-bar progress-bar-success progress-now" role="progressbar"
+								 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+								<span>40312元</span>
+							</div>
+							<div class="progress-bar progress-leave" role="progressbar"
+								 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+								<span class="text-muted">剩余79688元</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<p>“天使阳光行动”是中国红十字基金会倡导实施的
+					“红十字天使计划”的组成部分，是继救助白血病儿童、脑瘫儿童等重症患儿之后推出
+					的又一个大病医疗救助行动。该行动旨在动员社会力量，建立“天使阳光基金”，对农
+					村患有先天性心脏病...</p>
+				</div>
+			</div>
+<!--			捐赠表单-->
+			<div class="col-md-6">
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<h3 class="panel-title">捐赠信息</h3>
+					</div>
+					<div class="panel-body">
+						<div class="form-horizontal" role="form">
+							<div class="form-group">
+								<div class="col-md-2 text-right"><b>收款方</b></div>
+								<div class="col-md-10"><b>佛山公益网基金会</b></div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-2 text-right control-label"><b>捐赠金额</b></div>
+								<div class="col-md-5">
+									<input type="text" class="form-control" id="firstname" placeholder="单位:元">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-10">
+									<div class="checkbox">
+										<label><input type="checkbox">匿名捐赠</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-10">
+									<button class="btn btn-danger" data-toggle="modal" data-target="#pay">确认</button>
+									<!-- 模态框（Modal） -->
+									<div class="modal fade" id="pay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title" id="myModalLabel">请扫描二维码完成支付</h4>
+												</div>
+												<div class="modal-body text-center">
+													<img src="imgs/weixin.png"/>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+												</div>
+											</div><!-- /.modal-content -->
+										</div><!-- /.modal -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--	 底部 -->
+<footer id="footer" class="panel-footer hidden-sm hidden-xs">
+	<div class="container">
+		<div class="row">
+			<!--                上方导航链接-->
+			<div class="col-md-3 footer-left">
+				<div class="col-md-6">
+					<ul class="list-inline text-center">
+						<li><a href="category.html">进行的项目</a></li>
+						<li><a href="ranking.html">捐赠榜</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline text-center">
+						<li><a href="about.html">关于</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--                中间版权模块-->
+			<div class="col-md-6 footer-mid">
+				<h4 class="text-center text-muted">版权声明CopyRight·2019@华南师范大学·软件学院</h4>
+			</div>
+			<!--                官方微信微博-->
+			<div class="col-md-3 footer-right">
+				<div class="col-md-3 weibo">
+					<div class="badge">官方微博</div>
+					<img width="100" src="imgs/weibo.png"/>
+				</div>
+				<div class="col-md-3 weixin">
+					<div class="badge">官方微信</div>
+					<img width="100" src="imgs/weixin.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
